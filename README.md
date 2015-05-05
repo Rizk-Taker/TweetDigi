@@ -1,0 +1,1 @@
+TweetDigi is an iOS application that displays Tendigi's twitter feed.
