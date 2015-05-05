@@ -13,6 +13,10 @@
 		BC4618251AF9313D00A5CF73 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC4618241AF9313D00A5CF73 /* Images.xcassets */; };
 		BC4618281AF9313D00A5CF73 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4618261AF9313D00A5CF73 /* LaunchScreen.xib */; };
 		BC4618341AF9313D00A5CF73 /* TweetDigiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4618331AF9313D00A5CF73 /* TweetDigiTests.m */; };
+		BC4618BD1AF9522800A5CF73 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4618BA1AF9522800A5CF73 /* Fabric.framework */; };
+		BC4618BE1AF9522800A5CF73 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4618BB1AF9522800A5CF73 /* TwitterKit.framework */; };
+		BC4618BF1AF9522800A5CF73 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BC4618BC1AF9522800A5CF73 /* TwitterKitResources.bundle */; };
+		BC4618C21AF9528300A5CF73 /* TDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4618C11AF9528300A5CF73 /* TDLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,11 @@
 		BC46182D1AF9313D00A5CF73 /* TweetDigiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TweetDigiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC4618321AF9313D00A5CF73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC4618331AF9313D00A5CF73 /* TweetDigiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweetDigiTests.m; sourceTree = "<group>"; };
+		BC4618BA1AF9522800A5CF73 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		BC4618BB1AF9522800A5CF73 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		BC4618BC1AF9522800A5CF73 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		BC4618C01AF9528300A5CF73 /* TDLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDLoginViewController.h; sourceTree = "<group>"; };
+		BC4618C11AF9528300A5CF73 /* TDLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC4618BD1AF9522800A5CF73 /* Fabric.framework in Frameworks */,
+				BC4618BE1AF9522800A5CF73 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +71,9 @@
 		BC46180B1AF9313D00A5CF73 = {
 			isa = PBXGroup;
 			children = (
+				BC4618BA1AF9522800A5CF73 /* Fabric.framework */,
+				BC4618BB1AF9522800A5CF73 /* TwitterKit.framework */,
+				BC4618BC1AF9522800A5CF73 /* TwitterKitResources.bundle */,
 				BC4618161AF9313D00A5CF73 /* TweetDigi */,
 				BC4618301AF9313D00A5CF73 /* TweetDigiTests */,
 				BC4618151AF9313D00A5CF73 /* Products */,
@@ -80,6 +94,8 @@
 			children = (
 				BC46181B1AF9313D00A5CF73 /* AppDelegate.h */,
 				BC46181C1AF9313D00A5CF73 /* AppDelegate.m */,
+				BC4618C01AF9528300A5CF73 /* TDLoginViewController.h */,
+				BC4618C11AF9528300A5CF73 /* TDLoginViewController.m */,
 				BC4618211AF9313D00A5CF73 /* Main.storyboard */,
 				BC4618241AF9313D00A5CF73 /* Images.xcassets */,
 				BC4618261AF9313D00A5CF73 /* LaunchScreen.xib */,
@@ -124,6 +140,7 @@
 				BC4618101AF9313D00A5CF73 /* Sources */,
 				BC4618111AF9313D00A5CF73 /* Frameworks */,
 				BC4618121AF9313D00A5CF73 /* Resources */,
+				BC4618B91AF9521900A5CF73 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -194,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC4618BF1AF9522800A5CF73 /* TwitterKitResources.bundle in Resources */,
 				BC4618231AF9313D00A5CF73 /* Main.storyboard in Resources */,
 				BC4618281AF9313D00A5CF73 /* LaunchScreen.xib in Resources */,
 				BC4618251AF9313D00A5CF73 /* Images.xcassets in Resources */,
@@ -209,12 +227,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BC4618B91AF9521900A5CF73 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 4ccb67150ea50dc4d37bf09c28b73979ccf9ef38 984cf8fff772fe115e34ec4e3f310be97dcff4f24f5bf302d96018fbd38164e3";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC4618101AF9313D00A5CF73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BC46181D1AF9313D00A5CF73 /* AppDelegate.m in Sources */,
+				BC4618C21AF9528300A5CF73 /* TDLoginViewController.m in Sources */,
 				BC46181A1AF9313D00A5CF73 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +376,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TweetDigi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -351,6 +390,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TweetDigi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -410,6 +453,7 @@
 				BC4618391AF9313D00A5CF73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC46183A1AF9313D00A5CF73 /* Build configuration list for PBXNativeTarget "TweetDigiTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +462,7 @@
 				BC46183C1AF9313D00A5CF73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
