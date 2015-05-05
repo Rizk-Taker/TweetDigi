@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Wkc-2b-Z23">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Login View Controller-->
@@ -15,31 +16,53 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Drm-1c-rmt">
+                                <rect key="frame" x="0.0" y="120" width="600" height="480"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="szh-mz-SQb" customClass="TDTableViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="szh-mz-SQb" id="3r2-qN-DUN">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Twitter_logo_white + Group.png" translatesAutoresizingMaskIntoConstraints="NO" id="AGM-5c-mQw">
+                                <rect key="frame" x="120" y="60" width="360" height="180"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Drm-1c-rmt" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" multiplier="1.2" id="67B-1N-5mN"/>
+                            <constraint firstItem="Drm-1c-rmt" firstAttribute="height" secondItem="kh9-bI-dsS" secondAttribute="height" multiplier="0.8" id="J6k-RA-v8J"/>
+                            <constraint firstItem="Drm-1c-rmt" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="JAI-XA-hqx"/>
+                            <constraint firstAttribute="centerX" secondItem="AGM-5c-mQw" secondAttribute="centerX" id="Wjb-bm-LQJ"/>
+                            <constraint firstItem="AGM-5c-mQw" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.6" id="ZO5-0I-0Q6"/>
+                            <constraint firstItem="AGM-5c-mQw" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" multiplier="0.5" id="ZlQ-wQ-ken"/>
+                            <constraint firstItem="AGM-5c-mQw" firstAttribute="height" secondItem="kh9-bI-dsS" secondAttribute="height" multiplier="0.3" id="oe4-Ub-ANo"/>
+                            <constraint firstItem="Drm-1c-rmt" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="ugP-N2-KV1"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Zgt-Cx-Cfv"/>
+                    <connections>
+                        <outlet property="logo" destination="AGM-5c-mQw" id="uh1-VY-AHh"/>
+                        <outlet property="tableView" destination="Drm-1c-rmt" id="073-5C-hTw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1092" y="228"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Abc-SE-HZr">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wkc-2b-Z23" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cSX-ja-64v">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="FYB-g8-jDF"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1PT-AG-aC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="255" y="-465"/>
+            <point key="canvasLocation" x="938" y="-465"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Twitter_logo_white + Group.png" width="2481" height="2481"/>
+    </resources>
 </document>
