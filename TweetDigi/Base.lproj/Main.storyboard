@@ -24,7 +24,7 @@
                                 <color key="sectionIndexColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="szh-mz-SQb" customClass="TDTableViewCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="szh-mz-SQb">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="szh-mz-SQb" id="3r2-qN-DUN">
@@ -44,7 +44,7 @@
                             <constraint firstItem="Drm-1c-rmt" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" multiplier="1.2" id="67B-1N-5mN"/>
                             <constraint firstItem="Drm-1c-rmt" firstAttribute="height" secondItem="kh9-bI-dsS" secondAttribute="height" multiplier="0.8" id="J6k-RA-v8J"/>
                             <constraint firstItem="Drm-1c-rmt" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="JAI-XA-hqx"/>
-                            <constraint firstAttribute="centerX" secondItem="AGM-5c-mQw" secondAttribute="centerX" id="Wjb-bm-LQJ"/>
+                            <constraint firstItem="AGM-5c-mQw" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Wjb-bm-LQJ"/>
                             <constraint firstItem="AGM-5c-mQw" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.6" id="ZO5-0I-0Q6"/>
                             <constraint firstItem="AGM-5c-mQw" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" multiplier="0.5" id="ZlQ-wQ-ken"/>
                             <constraint firstItem="AGM-5c-mQw" firstAttribute="height" secondItem="kh9-bI-dsS" secondAttribute="height" multiplier="0.3" id="oe4-Ub-ANo"/>
