@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIImageView *logo;
 @property (strong, nonatomic) NSLayoutConstraint *constraintY;
+@property (weak, nonatomic) IBOutlet UILabel *tweetDigiLabel;
 @end
 
 @implementation TDLoginViewController
@@ -67,7 +68,7 @@
               self.constraintY.constant = -400;
               self.tableView.hidden = NO;
               self.logo.hidden = YES;
-
+              self.tweetDigiLabel.hidden = NO;
           }];
     
 }

@@ -38,6 +38,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Twitter_logo_white + Group.png" translatesAutoresizingMaskIntoConstraints="NO" id="AGM-5c-mQw">
                                 <rect key="frame" x="120" y="60" width="360" height="180"/>
                             </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TweetDigi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDQ-QO-79x">
+                                <rect key="frame" x="279" y="281" width="179" height="30"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -45,8 +51,10 @@
                             <constraint firstItem="Drm-1c-rmt" firstAttribute="height" secondItem="kh9-bI-dsS" secondAttribute="height" multiplier="0.8" id="J6k-RA-v8J"/>
                             <constraint firstItem="Drm-1c-rmt" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="JAI-XA-hqx"/>
                             <constraint firstItem="AGM-5c-mQw" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Wjb-bm-LQJ"/>
+                            <constraint firstItem="pDQ-QO-79x" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" multiplier="0.2" id="XCh-Dk-rEU"/>
                             <constraint firstItem="AGM-5c-mQw" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.6" id="ZO5-0I-0Q6"/>
                             <constraint firstItem="AGM-5c-mQw" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" multiplier="0.5" id="ZlQ-wQ-ken"/>
+                            <constraint firstItem="pDQ-QO-79x" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="m4d-eY-TjA"/>
                             <constraint firstItem="AGM-5c-mQw" firstAttribute="height" secondItem="kh9-bI-dsS" secondAttribute="height" multiplier="0.3" id="oe4-Ub-ANo"/>
                             <constraint firstItem="Drm-1c-rmt" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="ugP-N2-KV1"/>
                         </constraints>
@@ -55,6 +63,7 @@
                     <connections>
                         <outlet property="logo" destination="AGM-5c-mQw" id="uh1-VY-AHh"/>
                         <outlet property="tableView" destination="Drm-1c-rmt" id="073-5C-hTw"/>
+                        <outlet property="tweetDigiLabel" destination="pDQ-QO-79x" id="NWa-2Q-ocE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
